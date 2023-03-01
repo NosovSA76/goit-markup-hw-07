@@ -1,0 +1,31 @@
+:root{
+    --primary-text-color:#434455;
+    --title-text-color:#2E2F42;
+    --active-color:#404BBF;
+    --akcent-color:#4D5AE5;
+    --only-white:#ffffff;
+    --button-bacgraund:#F4F4FD;
+    --button-border:#E7E9FC;
+    --icon-border:#8E8F99;
+    --set-gap: 24px;
+    --icon-color:#AFB1B8;
+    --icon-green: #31D0AA;
+    --modal-bac:#FCFCFC;
+
+    }
+h1, h2, h3, h4, ul, p{
+    margin:0;
+    padding: 0;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    color:var(--primary-text-color);
+    font-weight: 400;
+    font-size: 16px;
+   }
+   
