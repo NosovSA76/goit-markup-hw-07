@@ -29,17 +29,20 @@
             Web<span class="logo-end">Studio</span>
           </a>
           <ul class="nav">
-            <li>
-              <a class="link" href="./index.html" target="_self">Studio</a>
+            <li class="">
+              <a class="link port" href="./index.html" target="_self">Studio</a>
             </li>
             <li class="nav-margin">
-              <a class="link port" href="./portfolio.html" target="_self"
+              <a class="link" href="./portfolio.html" target="_self"
                 >Portfolio</a
               >
             </li>
-            <li class="nav-margin"><a class="link" href="">Contacts</a></li>
+            <li class="nav-margin">
+              <a class="link" href="">Contacts</a>
+            </li>
           </ul>
         </nav>
+
         <address class="address">
           <ul class="address-list">
             <li>
@@ -54,6 +57,25 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- MAIN -->
@@ -81,12 +103,17 @@
         <ul class="projects-list">
           <li class="projectsa">
             <a class="projects" href="">
-              <img
-                src="./images/banking.jpg"
-                alt="Banking"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  srcset="./images/banking.jpg 1x, ./images/bankingx2.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/banking.jpg 1x, ./images/bankingx2.jpg 2x"
+                />
+                <img src="./images/banking-mobil.jpg" alt="Banking" />
+              </picture>
+
               <div class="project-text">
                 <h3 class="project-item">Banking App Interface Concept</h3>
                 <p class="project-type">App</p>
@@ -100,12 +127,20 @@
           </li>
           <li class="projectsa">
             <a class="projects" href="">
-              <img
-                src="./images/payment.jpg"
-                alt="Payment"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  srcset="./images/payment.jpg 1x, ./images/paymentx2.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/payment-mobil.jpg   1x,
+                    ./images/payment-mobilx2.jpg 2x
+                  "
+                />
+                <img src="./images/payment-mobil.jpg" alt="Payment" />
+              </picture>
+
               <div class="project-text">
                 <h3 class="project-item">Cashless Payment</h3>
                 <p class="project-type">Marketing</p>
@@ -119,12 +154,22 @@
           </li>
           <li class="projectsa">
             <a class="projects" href="">
-              <img
-                src="./images/meditation.jpg"
-                alt="Meditaion"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/meditation.jpg   1x,
+                    ./images/meditationx2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/meditation-mobil.jpg   1x,
+                    ./images/meditation-mobilx2.jpg 2x
+                  "
+                />
+                <img src="./images/meditation-mobil.jpg" alt="Meditaion" />
+              </picture>
               <div class="project-text">
                 <h3 class="project-item">Meditaion App</h3>
                 <p class="project-type">App</p>
@@ -138,12 +183,20 @@
           </li>
           <li class="projectsa">
             <a class="projects" href="">
-              <img
-                src="./images/taxi.jpg"
-                alt="Taxi"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  srcset="./images/taxi.jpg 1x, ./images/taxix2.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/taxi-mobil.jpg   1x,
+                    ./images/taxi-mobilx2.jpg 2x
+                  "
+                />
+                <img src="./images/taxi-mobil.jpg" alt="Taxi" />
+              </picture>
+
               <div class="project-text">
                 <h3 class="project-item">Taxi Service</h3>
                 <p class="project-type">Marketing</p>
@@ -157,12 +210,20 @@
           </li>
           <li class="projectsa">
             <a class="projects" href="">
-              <img
-                src="./images/screen.jpg"
-                alt="Screen"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  srcset="./images/screen.jpg 1x, ./images/screenx2.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/screen-mobil.jpg   1x,
+                    ./images/screen-mobilx2.jpg 2x
+                  "
+                />
+                <img src="./images/screen-mobil.jpg" alt="Screen" />
+              </picture>
+
               <div class="project-text">
                 <h3 class="project-item">Screen Illustrations</h3>
                 <p class="project-type">Design</p>
@@ -176,12 +237,20 @@
           </li>
           <li class="projectsa">
             <a class="projects" href="">
-              <img
-                src="./images/onlain.jpg"
-                alt="Courses"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  srcset="./images/onlain.jpg 1x, ./images/onlainx2.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/onlain-mobil.jpg   1x,
+                    ./images/onlain-mobilx2.jpg 2x
+                  "
+                />
+                <img src="./images/onlain-mobil.jpg" alt="Courses" />
+              </picture>
+
               <div class="project-text">
                 <h3 class="project-item">Online Courses</h3>
                 <p class="project-type">Marketing</p>
@@ -195,12 +264,23 @@
           </li>
           <li class="projectsa">
             <a class="projects" href="">
-              <img
-                src="./images/instagram.jpg"
-                alt="Instagram"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/instagram.jpg   1x,
+                    ./images/instagramx2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/instagram-mobil.jpg   1x,
+                    ./images/instagram-mobilx2.jpg 2x
+                  "
+                />
+                <img src="./images/instagram-mobil.jpg" alt="Instagram" />
+              </picture>
+
               <div class="project-text">
                 <h3 class="project-item">Instagram Stories Concept</h3>
                 <p class="project-type">Design</p>
@@ -214,12 +294,20 @@
           </li>
           <li class="projectsa">
             <a class="projects" href="">
-              <img
-                src="./images/food.jpg"
-                alt="food"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  srcset="./images/food.jpg 1x, ./images/foodx2.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/food-mobil.jpg   1x,
+                    ./images/food-mobilx2.jpg 2x
+                  "
+                />
+                <img src="./images/food-mobil.jpg" alt="food" />
+              </picture>
+
               <div class="project-text">
                 <h3 class="project-item">Organic Food</h3>
                 <p class="project-type">Web Site</p>
@@ -233,12 +321,20 @@
           </li>
           <li class="projectsa">
             <a class="projects" href="">
-              <img
-                src="./images/cofee.jpg"
-                alt="Coffee"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  srcset="./images/cofee.jpg 1x, ./images/cofeex2.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/cofee-mobil.jpg   1x,
+                    ./images/cofee-mobilx2.jpg 2x
+                  "
+                />
+                <img src="./images/cofee-mobil.jpg" alt="Coffee" />
+              </picture>
+
               <div class="project-text">
                 <h3 class="project-item">Fresh Coffee</h3>
                 <p class="project-type">Web Site</p>
@@ -258,10 +354,12 @@
 
     <footer class="footer">
       <div class="conteiner">
-        <div class="foter-content">
-          <a class="logo-footer" href="./index.html" target="_self"
-            >Web<span class="logo-footer-end">Studio</span>
-          </a>
+        <div class="margin-logo">
+          <div class="logo-centr">
+            <a class="logo-footer" href="./index.html" target="_self"
+              >Web<span class="logo-footer-end">Studio</span>
+            </a>
+          </div>
           <p class="footer-text">
             Increase the flow of customers and sales for your business with
             digital marketing & growth solutions.
@@ -320,6 +418,7 @@
             </li>
           </ul>
         </div>
+
         <div class="footer-subscribe">
           <p class="footer-margin">Subscribe</p>
           <form action="#" class="subscribe-form">
@@ -342,6 +441,86 @@
       </div>
     </footer>
 
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="close-modal menu-toggle js-close-menu">
+        <svg class="close-icon">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="mobil-window">
+        <ul class="mobile-menu">
+          <li><a href="" class="mobile-link">Studio</a></li>
+          <li><a href="" class="mobile-link">Portfolio</a></li>
+          <li><a href="" class="mobile-link">Contacts</a></li>
+        </ul>
+        <address class="mobil-adress">
+          <ul class="address-mobil">
+            <li class="contacts-mobil">
+              <a class="contacts-mobil" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a class="mail-mobil" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="action-mobil">
+          <li>
+            <a
+              class="social-link"
+              href=""
+              target="_blank"
+              rel="noreferer nofollow noopener"
+            >
+              <svg class="social-icon">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="social-link"
+              href=""
+              target="_blank"
+              rel="noreferer nofollow noopener"
+            >
+              <svg class="social-icon">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="social-link"
+              href=""
+              target="_blank"
+              rel="noreferer nofollow noopener"
+            >
+              <svg class="social-icon">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="social-link"
+              href=""
+              target="_blank"
+              rel="noreferer nofollow noopener"
+            >
+              <svg class="social-icon">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
