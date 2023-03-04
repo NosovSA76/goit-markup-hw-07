@@ -55,23 +55,9 @@
             </li>
           </ul>
         </address>
-        <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
+        <button class="menu-toggle js-open-menu">
+          <svg class="hamb">
+            <use class="hamburger" href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
       </div>
@@ -680,15 +666,15 @@
 
     <div class="menu-container js-menu-container" id="mobile-menu">
       <div class="mobil-window">
-        <button class="close-modal menu-toggle js-close-menu">
+        <button class="close-modal js-close-menu">
           <svg class="close-icon">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
 
         <ul class="mobile-menu">
-          <li><a href="" class="mobile-link">Studio</a></li>
-          <li><a href="" class="mobile-link">Portfolio</a></li>
+          <li><a href="./index.html" class="mobile-link actual">Studio</a></li>
+          <li><a href="./portfolio.html" class="mobile-link">Portfolio</a></li>
           <li><a href="" class="mobile-link">Contacts</a></li>
         </ul>
         <address class="mobil-adress">

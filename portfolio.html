@@ -30,10 +30,10 @@
           </a>
           <ul class="nav">
             <li class="">
-              <a class="link port" href="./index.html" target="_self">Studio</a>
+              <a class="link" href="./index.html" target="_self">Studio</a>
             </li>
             <li class="nav-margin">
-              <a class="link" href="./portfolio.html" target="_self"
+              <a class="link port" href="./portfolio.html" target="_self"
                 >Portfolio</a
               >
             </li>
@@ -62,18 +62,8 @@
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
+          <svg>
+            <use class="hamb" href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
       </div>
@@ -440,15 +430,18 @@
     </footer>
 
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="close-modal menu-toggle js-close-menu">
-        <svg class="close-icon">
-          <use href="./images/icons.svg#icon-close"></use>
-        </svg>
-      </button>
       <div class="mobil-window">
+        <button class="close-modal js-close-menu">
+          <svg class="close-icon">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
         <ul class="mobile-menu">
-          <li><a href="" class="mobile-link">Studio</a></li>
-          <li><a href="" class="mobile-link">Portfolio</a></li>
+          <li><a href="./index.html" class="mobile-link">Studio</a></li>
+          <li>
+            <a href="./portfolio.html" class="mobile-link actual">Portfolio</a>
+          </li>
           <li><a href="" class="mobile-link">Contacts</a></li>
         </ul>
         <address class="mobil-adress">
