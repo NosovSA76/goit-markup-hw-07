@@ -213,7 +213,7 @@ padding: 0 15px;} }
   outline: none;
   margin-left: auto;
   align-items: center;
-    justify-content: center;
+  justify-content: center;
    }
 
 @media (min-width: 768px) {
@@ -222,6 +222,11 @@ padding: 0 15px;} }
   }
 }
 .hamb{
+  width: 32px;
+  height: 32px;
+}
+.hamburger{
+  display: block;
   width: 32px;
   height: 22px;
 }
@@ -721,9 +726,6 @@ padding: 96px 0 128px 0;
   }
 }
 
-.team .conteiner {
-
-}
 @media (min-width: 768px) {
   .team .conteiner {
     width: 584px;
